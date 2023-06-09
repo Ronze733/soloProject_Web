@@ -1,0 +1,26 @@
+@charset "UTF-8";
+
+.login-main{
+	display: flex;
+	flex-wrap: nowrap;
+	position: absolute;
+	top: 0px;
+	right: 10px;
+}
+
+
+.join{
+	margin-left: 20px;
+}
+
+.login-result{
+	position: absolute;
+	top: 0px;
+	right: 10px;
+	display: flex;
+}
+
+.logout-button{
+	margin-left: 10px;
+	margin-right: 10px;
+}

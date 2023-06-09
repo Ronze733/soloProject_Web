@@ -1,0 +1,17 @@
+@charset "UTF-8";
+
+.joinPage{
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.joinTbl{
+	width: 60%;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+.inputid{
+	display: flex;
+}
