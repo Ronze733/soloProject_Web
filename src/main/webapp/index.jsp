@@ -29,8 +29,8 @@ if(message != null && message != ""){
 				</div>
 				<div class="menus">
 					<a href="HC">홈</a>
-					<a href="WeatherC?city=seoul">날씨</a>
-					<a href="MapC">지도API</a>
+					<a onclick="findWeather()">날씨</a>
+					<a onclick="findCity()">지도API</a>
 					<a href="Game1C">게임1</a>
 					<a href="Game2C">게임2</a>
 					<a href="ShowMember2C?id=${sessionScope.account.name }">회원 정보</a>
@@ -45,5 +45,24 @@ if(message != null && message != ""){
 			</div>
 		</div>
 	</div>
+	<script type="text/javascript">
+		function findWeather() {
+			let city = prompt("검색할 도시를 영어로 입력하세요.");
+			if(city !== null && city !== ""){
+				let url = "WeatherC?city=" + city;
+				location.href = url;
+			} else
+				return false;
+		}
+		
+		function findCity() {
+			let city = prompt("검색할 도시를 도로명 주소로 입력해 주세요");
+			if(city !== null && city !== ""){
+				let url = "MapC?place=" + city;
+				location.href = url;
+			} else
+				return false;
+		}
+	</script>
 </body>
 </html>
