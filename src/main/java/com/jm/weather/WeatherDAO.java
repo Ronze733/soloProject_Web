@@ -33,18 +33,15 @@ public class WeatherDAO {
 		
 		try {
 			URL u = new URL(url);
-			System.out.println(u);
 			HttpsURLConnection  huc = (HttpsURLConnection) u.openConnection();
 			
 			InputStream is = huc.getInputStream();
 			InputStreamReader isr = new InputStreamReader(is, "utf-8");
 			
-			System.out.println(isr);
 			
 			JSONParser jp = new JSONParser();
 			
 			JSONObject weatherData = (JSONObject) jp.parse(isr);
-			System.out.println(weatherData);
 			
 			JSONObject sysJ = (JSONObject) weatherData.get("city");
 			JSONArray weatherJ = (JSONArray) weatherData.get("list");
