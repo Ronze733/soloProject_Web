@@ -29,7 +29,7 @@ if(message != null && message != ""){
 				</div>
 				<div class="menus">
 					<a href="HC">홈</a>
-					<a href="BoardC">게시판</a>
+					<a href="MapC">지도API</a>
 					<a href="Game1C">게임1</a>
 					<a href="Game2C">게임2</a>
 					<a href="ShowMember2C?id=${sessionScope.account.name }">회원 정보</a>
